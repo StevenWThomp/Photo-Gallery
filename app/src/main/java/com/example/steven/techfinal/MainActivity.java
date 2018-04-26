@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_cat) {
             // Handle the camera action
         } else if (id == R.id.nav_dog) {
+        } else if (id == R.id.nav_exit) {
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
