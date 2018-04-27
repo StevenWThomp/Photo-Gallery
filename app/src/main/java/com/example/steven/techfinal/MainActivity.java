@@ -1,5 +1,7 @@
 package com.example.steven.techfinal;
 
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -44,7 +46,21 @@ public class MainActivity extends AppCompatActivity
             super.onBackPressed();
         }
     }
+    private void displaySelectedScreen(int id){
+        // TODO: 4/26/2018 FIX THIS 
+        android.support.v4.app.Fragment fragment = null;
 
+        switch(id){
+            case R.id.nav_dog:
+                fragment = new DogSlideShowFragment();
+                break;
+        }
+        if (fragment != null){
+            android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.content_main, fragment);
+            ft.commit();
+        }
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
