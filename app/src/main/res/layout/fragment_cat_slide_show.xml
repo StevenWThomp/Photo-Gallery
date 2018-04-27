@@ -14,6 +14,9 @@
         android:gravity="center"
         android:orientation="vertical">
 
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
         <ImageView
             android:id="@+id/cat_picture_one"
             android:layout_width="150dp"

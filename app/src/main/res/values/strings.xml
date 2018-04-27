@@ -3,6 +3,9 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
 
     <string name="action_settings">Settings</string>
     <string name="dog_pictures">Dog Slideshow</string>
@@ -15,4 +18,5 @@
     <string name="home_greeting">Welcome to the Dog/Cat Slideshow!</string>
     <string name="action_exit">Exit</string>
     <string name="select_slide_show">\tPlease select a slideshow on the side for cute animal pictures!</string>
+    <string name="select_exit">\tAlternatively, go to the options menu at the top right to exit the slideshow!</string>
 </resources>
