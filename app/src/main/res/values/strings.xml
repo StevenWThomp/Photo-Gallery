@@ -8,4 +8,8 @@
     <string name="dog_pictures">Dog Slideshow</string>
     <string name="cat_pictures">Cat Slideshow</string>
     <string name="exit_fragment">Exit</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_fragment">Home</string>
 </resources>

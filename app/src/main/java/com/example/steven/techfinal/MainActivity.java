@@ -1,6 +1,7 @@
 package com.example.steven.techfinal;
 
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -25,8 +26,6 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
             this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -35,6 +34,12 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setCheckedItem(R.id.nav_home);
+
+        android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.fragment, new HomeFragment()).commit();
+
+
     }
 
     @Override
@@ -46,21 +51,7 @@ public class MainActivity extends AppCompatActivity
             super.onBackPressed();
         }
     }
-    private void displaySelectedScreen(int id){
-        // TODO: 4/26/2018 FIX THIS 
-        android.support.v4.app.Fragment fragment = null;
 
-        switch(id){
-            case R.id.nav_dog:
-                fragment = new DogSlideShowFragment();
-                break;
-        }
-        if (fragment != null){
-            android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            ft.replace(R.id.content_main, fragment);
-            ft.commit();
-        }
-    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -90,9 +81,18 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_cat) {
+            CatSlideShowFragment catSlideShowFragment = new CatSlideShowFragment();
+            android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction().replace(R.id.fragment, catSlideShowFragment).commit();
             // Handle the camera action
         } else if (id == R.id.nav_dog) {
-        } else if (id == R.id.nav_exit) {
+            DogSlideShowFragment dogSlideShowFragment = new DogSlideShowFragment();
+            android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction().replace(R.id.fragment, dogSlideShowFragment).commit();
+        } else if (id == R.id.nav_home) {
+            HomeFragment homeFragment = new HomeFragment();
+            android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction().replace(R.id.fragment, homeFragment).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

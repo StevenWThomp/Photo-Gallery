@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class DogSlideShowFragment extends Fragment {
+public class CatSlideShowFragment extends Fragment {
 
 
-    public DogSlideShowFragment() {
+    public CatSlideShowFragment() {
         // Required empty public constructor
     }
 
@@ -23,7 +23,7 @@ public class DogSlideShowFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dog_slide_show, container, false);
+        return inflater.inflate(R.layout.fragment_cat_slide_show, container, false);
     }
 
 }
