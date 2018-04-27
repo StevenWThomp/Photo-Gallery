@@ -14,4 +14,5 @@
     <string name="home_fragment">Home</string>
     <string name="home_greeting">Welcome to the Dog/Cat Slideshow!</string>
     <string name="action_exit">Exit</string>
+    <string name="select_slide_show">\tPlease select a slideshow on the side for cute animal pictures!</string>
 </resources>
