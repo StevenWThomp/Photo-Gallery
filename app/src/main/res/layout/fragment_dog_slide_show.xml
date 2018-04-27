@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,11 +8,43 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
     <ImageView
         android:id="@+id/dog_picture_one"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:src="@drawable/dog1"
         android:scaleType="fitXY" />
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/dog_picture_two"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/dog2"
+            android:scaleType="fitXY" />
+        <ImageView
+            android:id="@+id/dog_picture_three"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/dog3"
+            android:scaleType="fitXY" />
+        <ImageView
+            android:id="@+id/dog_picture_four"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/dog4"
+            android:scaleType="fitXY" />
+        <ImageView
+            android:id="@+id/dog_picture_five"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/dog5"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+</ScrollView>
