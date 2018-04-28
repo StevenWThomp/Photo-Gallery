@@ -21,4 +21,6 @@
     <string name="cat_slide_show_welcome">Welcome to my cat SlideShow!</string>
     <string name="cat1_tooltip">Owen</string>
     <string name="dog_slide_show_welcome">Welcome to my dog SlideShow!</string>
+    <string name="place_holder_name">Place Holder Name</string>
+    <string name="place_holder_desc">Place Holder Description</string>
 </resources>
