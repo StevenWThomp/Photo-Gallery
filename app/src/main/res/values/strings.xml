@@ -12,11 +12,13 @@
     <string name="cat_pictures">Cat Slideshow</string>
     <string name="exit_fragment">Exit</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home_fragment">Home</string>
-    <string name="home_greeting">Welcome to the Dog/Cat Slideshow!</string>
+    <string name="home_greeting">Welcome to my Dog/Cat Slideshow!</string>
     <string name="action_exit">Exit</string>
-    <string name="select_slide_show">\tPlease select a slideshow on the side for cute animal pictures!</string>
-    <string name="select_exit">\tAlternatively, go to the options menu at the top right to exit the slideshow!</string>
+    <string name="select_slide_show">Please select a slideshow on the side for cute animal pictures!</string>
+    <string name="select_exit">Alternatively, go to the options menu at the top right to exit the slideshow!</string>
+    <string name="cat_slide_show_welcome">Welcome to my cat SlideShow!</string>
+    <string name="cat1_tooltip">Owen</string>
+    <string name="dog_slide_show_welcome">Welcome to my dog SlideShow!</string>
 </resources>
