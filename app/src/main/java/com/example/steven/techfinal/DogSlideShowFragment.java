@@ -15,14 +15,14 @@ public class DogSlideShowFragment extends Fragment {
 
 
     public DogSlideShowFragment() {
-        // Required empty public constructor
+//      Required empty public constructor
     }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+//      Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_dog_slide_show, container, false);
     }
 
