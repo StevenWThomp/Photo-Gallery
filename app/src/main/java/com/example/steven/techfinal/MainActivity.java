@@ -25,6 +25,7 @@ import android.widget.LinearLayout;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +46,8 @@ public class MainActivity extends AppCompatActivity
 //      Sets the first fragment you see to the home fragment
         android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.fragment, new HomeFragment()).commit();
+
+
     }
 
     @Override
